@@ -15,6 +15,23 @@ Each test case is given as a line of two integers a and b (−1000≤a,b≤1000)
 
 Print t integers — the required numbers a+b.
 
+# A. Bear and Big Brother
+Bear Limak wants to become the largest of bears, or at least to become larger than his brother Bob.
+
+Right now, Limak and Bob weigh a and b respectively. It's guaranteed that Limak's weight is smaller than or equal to his brother's weight.
+
+Limak eats a lot and his weight is tripled after every year, while Bob's weight is doubled after every year.
+
+After how many full years will Limak become strictly larger (strictly heavier) than Bob?
+
+**Input**
+
+The only line of the input contains two integers a and b (1 ≤ a ≤ b ≤ 10) — the weight of Limak and the weight of Bob respectively.
+
+**Output**
+
+Print one integer, denoting the integer number of years after which Limak will become strictly larger than Bob.
+
 # A. Watermelon
 One hot summer day Pete and his friend Billy decided to buy a watermelon. They chose the biggest and the ripest one, in their opinion. After that the watermelon was weighed, and the scales showed w kilos. They rushed home, dying of thirst, and decided to divide the berry, however they faced a hard problem.
 
