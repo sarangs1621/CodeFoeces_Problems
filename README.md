@@ -1,6 +1,20 @@
 # CodeForces_Problems
 These are the set of codeforces problems I have done
 
+
+# A. A+B (Trial Problem)
+You are given two integers a and b. Print a+b.
+
+**Input**
+
+The first line contains an integer t (1≤t≤104) — the number of test cases in the input. Then t test cases follow.
+
+Each test case is given as a line of two integers a and b (−1000≤a,b≤1000).
+
+**Output**
+
+Print t integers — the required numbers a+b.
+
 # A. Watermelon
 One hot summer day Pete and his friend Billy decided to buy a watermelon. They chose the biggest and the ripest one, in their opinion. After that the watermelon was weighed, and the scales showed w kilos. They rushed home, dying of thirst, and decided to divide the berry, however they faced a hard problem.
 
