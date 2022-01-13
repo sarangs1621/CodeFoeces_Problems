@@ -465,7 +465,7 @@ The first line contains a word s — it consists of uppercase and lowercase Lati
 
 Print the corrected word s. If the given word s has strictly more uppercase letters, make the word written in the uppercase register, otherwise - in the lowercase one.
 
-## [**A. Lesha and array splitting**](https://codeforces.com/problemset/problem/754/A)
+# [**A. Lesha and array splitting**](https://codeforces.com/problemset/problem/754/A)
 
 One spring day on his way to university Lesha found an array A. Lesha likes to split arrays into several parts. This time Lesha decided to split the array A into several, possibly one, new arrays so that the sum of elements in each of the new arrays is not zero. One more condition is that if we place the new arrays one after another they will form the old array A.
 
