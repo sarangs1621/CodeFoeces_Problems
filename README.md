@@ -465,3 +465,26 @@ The first line contains a word s — it consists of uppercase and lowercase Lati
 
 Print the corrected word s. If the given word s has strictly more uppercase letters, make the word written in the uppercase register, otherwise - in the lowercase one.
 
+## [**A. Lesha and array splitting**](https://codeforces.com/problemset/problem/754/A)
+
+One spring day on his way to university Lesha found an array A. Lesha likes to split arrays into several parts. This time Lesha decided to split the array A into several, possibly one, new arrays so that the sum of elements in each of the new arrays is not zero. One more condition is that if we place the new arrays one after another they will form the old array A.
+
+Lesha is tired now so he asked you to split the array. Help Lesha!
+
+**Input**
+
+The first line contains single integer n (1 ≤ n ≤ 100) — the number of elements in the array A.
+
+The next line contains n integers a1, a2, ..., an ( - 103 ≤ ai ≤ 103) — the elements of the array A.
+
+**Output**
+
+If it is not possible to split the array A and satisfy all the constraints, print single line containing "NO" (without quotes).
+
+Otherwise in the first line print "YES" (without quotes). In the next line print single integer k — the number of new arrays. In each of the next k lines print two integers li and ri which denote the subarray A[li... ri] of the initial array A being the i-th new array. Integers li, ri should satisfy the following conditions:
+
+l1 = 1
+rk = n
+ri + 1 = li + 1 for each 1 ≤ i < k.
+If there are multiple answers, print any of them.
+
