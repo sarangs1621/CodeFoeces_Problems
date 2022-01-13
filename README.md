@@ -488,3 +488,68 @@ rk = n
 ri + 1 = li + 1 for each 1 ≤ i < k.
 If there are multiple answers, print any of them.
 
+# [**A. Spy Detected!**](https://codeforces.com/contest/1512/problem/A)
+You are given an array a consisting of n (n≥3) positive integers. It is known that in this array, all the numbers except one are the same (for example, in the array [4,11,4,4] all numbers except one are equal to 4).
+
+Print the index of the element that does not equal others. The numbers in the array are numbered from one.
+
+**Input**
+
+The first line contains a single integer t (1≤t≤100). Then t test cases follow.
+
+The first line of each test case contains a single integer n (3≤n≤100) — the length of the array a.
+
+The second line of each test case contains n integers a1,a2,…,an (1≤ai≤100).
+
+It is guaranteed that all the numbers except one in the a array are the same.
+
+**Output**
+
+For each test case, output a single integer — the index of the element that is not equal to others.
+
+# [**A. Review Site**](https://codeforces.com/contest/1511/problem/A)
+You are an upcoming movie director, and you have just released your first movie. You have also launched a simple review site with two buttons to press — upvote and downvote.
+
+However, the site is not so simple on the inside. There are two servers, each with its separate counts for the upvotes and the downvotes.
+
+n reviewers enter the site one by one. Each reviewer is one of the following types:
+
+type 1: a reviewer has watched the movie, and they like it — they press the upvote button;
+type 2: a reviewer has watched the movie, and they dislike it — they press the downvote button;
+type 3: a reviewer hasn't watched the movie — they look at the current number of upvotes and downvotes of the movie on the server they are in and decide what button to press. If there are more downvotes than upvotes, then a reviewer downvotes the movie. Otherwise, they upvote the movie.
+Each reviewer votes on the movie exactly once.
+
+Since you have two servers, you can actually manipulate the votes so that your movie gets as many upvotes as possible. When a reviewer enters a site, you know their type, and you can send them either to the first server or to the second one.
+
+What is the maximum total number of upvotes you can gather over both servers if you decide which server to send each reviewer to?
+
+**Input**
+
+The first line contains a single integer t (1≤t≤104) — the number of testcases.
+
+Then the descriptions of t testcases follow.
+
+The first line of each testcase contains a single integer n (1≤n≤50) — the number of reviewers.
+
+The second line of each testcase contains n integers r1,r2,…,rn (1≤ri≤3) — the types of the reviewers in the same order they enter the site.
+
+**Output**
+
+For each testcase print a single integer — the maximum total number of upvotes you can gather over both servers if you decide which server to send each reviewer to.
+
+# [**A. Ehab and another construction problem**](https://codeforces.com/contest/1088/problem/A)
+
+Given an integer x, find 2 integers a and b such that:
+
+1≤a,b≤x
+b divides a (a is divisible by b).
+a⋅b>x.
+ab<x.
+
+**Input**
+
+The only line contains the integer x (1≤x≤100).
+
+**Output**
+
+You should output two integers a and b, satisfying the given conditions, separated by a space. If no pair of integers satisfy the conditions above, print "-1" (without quotes).
