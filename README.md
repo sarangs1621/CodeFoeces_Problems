@@ -553,3 +553,27 @@ The only line contains the integer x (1≤x≤100).
 **Output**
 
 You should output two integers a and b, satisfying the given conditions, separated by a space. If no pair of integers satisfy the conditions above, print "-1" (without quotes).
+
+# [**A. Find Divisible**](https://codeforces.com/contest/1096/problem/A)
+
+You are given a range of positive integers from l to r.
+
+Find such a pair of integers (x,y) that l≤x,y≤r, x≠y and x divides y.
+
+If there are multiple answers, print any of them.
+
+You are also asked to answer T independent queries.
+
+**Input**
+
+The first line contains a single integer T (1≤T≤1000) — the number of queries.
+
+Each of the next T lines contains two integers l and r (1≤l≤r≤998244353) — inclusive borders of the range.
+
+It is guaranteed that testset only includes queries, which have at least one suitable pair.
+
+**Output**
+
+Print T lines, each line should contain the answer — two integers x and y such that l≤x,y≤r, x≠y and x divides y. The answer in the i-th line should correspond to the i-th query from the input.
+
+If there are multiple answers, print any of them.
