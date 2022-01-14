@@ -1,4 +1,4 @@
-# CodeForces_Problems
+# CodeForces & CodeChef Problems 
 These are the set of codeforces problems I have done
 
 
@@ -611,3 +611,35 @@ The first line of the input contains integer number n (2≤n≤100) — the leng
 **Output**
 
 Print the only line containing exactly two capital Latin letters — any two-gram contained in the given string s as a substring (i.e. two consecutive characters of the string) maximal number of times.
+
+# [**Sum of Digits**](https://www.codechef.com/problems/FLOW006)
+
+You're given an integer N. Write a program to calculate the sum of all the digits of N.
+
+**Input**
+
+The first line contains an integer T, the total number of testcases. Then follow T lines, each line contains an integer N.
+
+**Output**
+
+For each test case, calculate the sum of digits of N, and display it in a new line.
+
+Constraints
+
+1 ≤ T ≤ 1000
+1 ≤ N ≤ 1000000
+
+**Example**
+
+**Input**
+
+3 
+12345
+31203
+2123
+
+Output
+
+15
+9
+8
