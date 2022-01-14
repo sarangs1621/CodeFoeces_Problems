@@ -624,7 +624,7 @@ The first line contains an integer T, the total number of testcases. Then follow
 
 For each test case, calculate the sum of digits of N, and display it in a new line.
 
-Constraints
+**Constraints**
 
 1 ≤ T ≤ 1000
 1 ≤ N ≤ 1000000
