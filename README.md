@@ -670,3 +670,83 @@ The second line contains two integers x and y (1≤x,y≤n) — coordinates of t
 In a single line print the answer "White" (without quotes), if the white king will win, or "Black" (without quotes), if the black king will win.
 
 You can print each letter in any case (upper or lower).
+
+# [**C. Songs Compression**](https://codeforces.com/problemset/problem/1015/C)
+
+Ivan has n songs on his phone. The size of the i-th song is ai bytes. Ivan also has a flash drive which can hold at most m bytes in total. Initially, his flash drive is empty.
+
+Ivan wants to copy all n songs to the flash drive. He can compress the songs. If he compresses the i-th song, the size of the i-th song reduces from ai to bi bytes (bi<ai).
+
+Ivan can compress any subset of the songs (possibly empty) and copy all the songs to his flash drive if the sum of their sizes is at most m. He can compress any subset of the songs (not necessarily contiguous).
+
+Ivan wants to find the minimum number of songs he needs to compress in such a way that all his songs fit on the drive (i.e. the sum of their sizes is less than or equal to m).
+
+If it is impossible to copy all the songs (even if Ivan compresses all the songs), print "-1". Otherwise print the minimum number of songs Ivan needs to compress.
+
+**Input**
+
+The first line of the input contains two integers n and m (1≤n≤105,1≤m≤109) — the number of the songs on Ivan's phone and the capacity of Ivan's flash drive.
+
+The next n lines contain two integers each: the i-th line contains two integers ai and bi (1≤ai,bi≤109, ai>bi) — the initial size of the i-th song and the size of the i-th song after compression.
+
+**Output**
+
+If it is impossible to compress a subset of the songs in such a way that all songs fit on the flash drive, print "-1". Otherwise print the minimum number of the songs to compress.
+
+# [**B. Array Stabilization**](https://codeforces.com/problemset/problem/1095/B)
+
+You are given an array a consisting of n integer numbers.
+
+Let instability of the array be the following value: ![image.png](data:image/png;base64,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)
+
+You have to remove exactly one element from this array to minimize instability of the resulting (n−1)-elements array. Your task is to calculate the minimum possible instability.
+
+**Input**
+
+The first line of the input contains one integer n (2≤n≤105) — the number of elements in the array a.
+
+The second line of the input contains n integers a1,a2,…,an (1≤ai≤105) — elements of the array a.
+
+**Output**
+
+Print one integer — the minimum possible instability of the array if you have to remove exactly one element from the array a.
+
+# [**B. Letters Rearranging**](https://codeforces.com/problemset/problem/1093/B)
+
+You are given a string s consisting only of lowercase Latin letters.
+
+You can rearrange all letters of this string as you wish. Your task is to obtain a good string by rearranging the letters of the given string or report that it is impossible to do it.
+
+Let's call a string good if it is not a palindrome. Palindrome is a string which is read from left to right the same as from right to left. For example, strings "abacaba", "aa" and "z" are palindromes and strings "bba", "xd" are not.
+
+You have to answer t independent queries.
+
+**Input**
+
+The first line of the input contains one integer t (1≤t≤100) — number of queries.
+
+Each of the next t lines contains one string. The i-th line contains a string si consisting only of lowercase Latin letter. It is guaranteed that the length of si is from 1 to 1000 (inclusive).
+
+**Output**
+
+Print t lines. In the i-th line print the answer to the i-th query: -1 if it is impossible to obtain a good string by rearranging the letters of si and any good string which can be obtained from the given one (by rearranging the letters) otherwise.
+
+# [**B. Delete from the Left**](https://codeforces.com/problemset/problem/1005/B)
+
+You are given two strings s and t. In a single move, you can choose any of two strings and delete the first (that is, the leftmost) character. After a move, the length of the string decreases by 1. You can't choose a string if it is empty.
+
+For example:
+
+by applying a move to the string "where", the result is the string "here",
+by applying a move to the string "a", the result is an empty string "".
+You are required to make two given strings equal using the fewest number of moves. It is possible that, in the end, both strings will be equal to the empty string, and so, are equal to each other. In this case, the answer is obviously the sum of the lengths of the initial strings.
+
+Write a program that finds the minimum number of moves to make two given strings s and t equal.
+
+**Input**
+
+The first line of the input contains s. In the second line of the input contains t. Both strings consist only of lowercase Latin letters. The number of letters in each string is between 1 and 2⋅105, inclusive.
+
+**Output**
+
+Output the fewest number of moves required. It is possible that, in the end, both strings will be equal to the empty string, and so, are equal to each other. In this case, the answer is obviously the sum of the lengths of the given strings.
