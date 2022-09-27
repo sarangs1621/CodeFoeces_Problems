@@ -1,5 +1,5 @@
 # CodeForces, Hacker Rank & CodeChef Problems 
-These are the set of codeforces problems I have done
+These are the set of Codeforces, HackerRank and CodeChef problems I have done
 
 
 # [**A. A+B (Trial Problem)**](https://codeforces.com/problemset/problem/1351/A)
