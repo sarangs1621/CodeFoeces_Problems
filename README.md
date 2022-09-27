@@ -752,7 +752,7 @@ The first line of the input contains s. In the second line of the input contains
 Output the fewest number of moves required. It is possible that, in the end, both strings will be equal to the empty string, and so, are equal to each other. In this case, the answer is obviously the sum of the lengths of the given strings.
 
 # ["Hello World!" in C](https://www.hackerrank.com/challenges/hello-world-c/problem?isFullScreen=true)
-Objective
+**Objective**
 
 In this challenge, we will learn some basic concepts of C that will get you started with the language. You will need to use the same syntax to read input and write output in many C challenges. As you work through these problems, review the code stubs to learn about reading from stdin and writing to stdout.
 
@@ -787,7 +787,7 @@ Hello, World!
 Welcome to C programming.
 
 # [**Playing With Characters**](https://www.hackerrank.com/challenges/playing-with-characters/problem?isFullScreen=true)
-Objective
+**Objective**
 
 This challenge will help you to learn how to take a character, a string and a sentence as input in C.
 
@@ -824,3 +824,36 @@ Print three lines of output. The first line prints the character, ch.
 The second line prints the string, s.
 The third line prints the sentence, sen.
 
+# [**Sum and Difference of Two Numbers**](https://www.hackerrank.com/challenges/sum-numbers-c/problem?isFullScreen=true)
+**Objective**
+
+The fundamental data types in c are int, float and char. Today, we're discussing int and float data types.
+
+The printf() function prints the given statement to the console. The syntax is printf("format string",argument_list);. In the function, if we are using an integer, character, string or float as argument, then in the format string we have to write %d (integer), %c (character), %s (string), %f (float) respectively.
+
+The scanf() function reads the input data from the console. The syntax is scanf("format string",argument_list);. For ex: The scanf("%d",&number) statement reads integer number from the console and stores the given value in variable .
+
+To input two integers separated by a space on a single line, the command is scanf("%d %d", &n, &m), where  and  are the two integers.
+
+Task
+
+Your task is to take two numbers of int data type, two numbers of float data type as input and output their sum:
+
+Declare  variables: two of type int and two of type float.
+Read  lines of input from stdin (according to the sequence given in the 'Input Format' section below) and initialize your  variables.
+Use the  and  operator to perform the following operations:
+Print the sum and difference of two int variable on a new line.
+Print the sum and difference of two float variable rounded to one decimal place on a new line.
+**Input**
+
+The first line contains two integers.
+The second line contains two floating point numbers.
+
+Constraints
+
+ integer variables 
+ float variables 
+ 
+**Output**
+
+Print the sum and difference of both integers separated by a space on the first line, and the sum and difference of both float (scaled to  decimal place) separated by a space on the second line.
