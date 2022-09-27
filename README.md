@@ -1192,7 +1192,7 @@ For each integer  in the inclusive interval [ a, b]:
 If 1 ≤ n ≤ 9, then print the English representation of it in lowercase. That is "one" for 1, "two" for 2, and so on.
 Else if n > 9 and it is an even number, then print "even".
 Else if n > 9 and it is an odd number, then print "odd".
-Note: [a,b] = {x ∈ ![image](https://user-images.githubusercontent.com/92372142/192580542-bbdc0a94-b133-4f1e-b521-9f91d31205ba.png) | a ≤ x ≤ b } = { a + a + 1 ..., b}
+Note: [a,b] = {x ∈ Z | a ≤ x ≤ b } = { a + a + 1 ..., b}
 
 Sample Input
 
@@ -1204,3 +1204,91 @@ eight
 nine
 even
 odd
+
+# [**Functions**](https://www.hackerrank.com/challenges/c-tutorial-functions/problem?isFullScreen=true)
+Functions are a bunch of statements glued together. A function is provided with zero or more arguments, and it executes the statements on it. Based on the return type, it either returns nothing (void) or something.
+
+The syntax for a function is
+
+return_type function_name(arg_type_1 arg_1, arg_type_2 arg_2, ...) {
+    ...
+    ...
+    ...
+    [if return_type is non void]
+        return something of type `return_type`;
+}
+For example, a function to return the sum of four parameters can be written as
+
+int sum_of_four(int a, int b, int c, int d) {
+    int sum = 0;
+    sum += a;
+    sum += b;
+    sum += c;
+    sum += d;
+    return sum;
+}
+Write a function int max_of_four(int a, int b, int c, int d) which returns the maximum of the four arguments it receives.
+
++= : Add and assignment operator. It adds the right operand to the left operand and assigns the result to the left operand.
+a += b is equivalent to a = a + b;
+Input Format
+
+Input will contain four integers -  a,b,c,d, one per line.
+
+Output Format
+
+Return the greatest of the four integers.
+PS: I/O will be automatically handled.
+
+Sample Input
+
+3
+4
+6
+5
+Sample Output
+
+6
+
+# [**Pointer**](https://www.hackerrank.com/challenges/c-tutorial-pointer/problem?isFullScreen=true)	
+A pointer in C++ is used to share a memory address among different contexts (primarily functions). They are used whenever a function needs to modify the content of a variable, but it does not have ownership.
+	
+In order to access the memory address of a variable,val , prepend it with & sign. For example, &val returns the memory address of val.
+
+This memory address is assigned to a pointer and can be shared among various functions. For example, int * p = &val  will assign the memory address of val to pointer p. To access the content of the memory to which the pointer points, prepend it with a *. For example, *p will return the value reflected by val and any modification to it will be reflected at the source (val).
+
+	void increment(int *v) {
+        (*v)++; 
+    }
+      	int main() {
+        int a;
+        scanf("%d", &a);
+        increment(&a);
+        printf("%d", a);
+    	return 0;      
+    }     
+Task
+a' = a + b
+b' = |a - b|
+
+Complete the function void update(int *a,int *b). It receives two integer pointers, int* a and int* b. Set the value of  to their sum, and  to their absolute difference. There is no return value, and no return statement is needed.
+
+**Input**
+
+The input will contain two integers,  and , separated by a newline.
+
+**Output**
+
+Modify the two values in place and the code stub main() will print their values.
+
+Note: Input/ouput will be automatically handled. You only have to complete the function described in the 'task' section.
+
+Sample Input
+
+4
+5
+Sample Output
+
+9
+1
+
