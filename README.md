@@ -1160,6 +1160,7 @@ eight is the English word for the number 8.
 Sample Input 2
 
 44
+
 Sample Output 2
 
 Greater than 9
@@ -1181,11 +1182,11 @@ for(int i = 0; i < 10; i++) {
 }
 In this challenge, you will use a for loop to increment a variable through a range.
 
-**Input **
+**Input**
 
 You will be given two positive integers,  and  (), separated by a newline.
 
-**Output **
+**Output**
 
 For each integer  in the inclusive interval [ a, b]:
 
@@ -1198,6 +1199,7 @@ Sample Input
 
 8
 11
+	
 Sample Output
 
 eight
@@ -1231,11 +1233,12 @@ Write a function int max_of_four(int a, int b, int c, int d) which returns the m
 
 += : Add and assignment operator. It adds the right operand to the left operand and assigns the result to the left operand.
 a += b is equivalent to a = a + b;
-Input Format
+	
+**Input**
 
 Input will contain four integers -  a,b,c,d, one per line.
 
-Output Format
+**Output**
 
 Return the greatest of the four integers.
 PS: I/O will be automatically handled.
@@ -1246,6 +1249,7 @@ Sample Input
 4
 6
 5
+	
 Sample Output
 
 6
@@ -1287,6 +1291,7 @@ Sample Input
 
 4
 5
+	
 Sample Output
 
 9
