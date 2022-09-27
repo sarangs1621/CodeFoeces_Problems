@@ -1,4 +1,4 @@
-# CodeForces & CodeChef Problems 
+# CodeForces, Hacker Rank & CodeChef Problems 
 These are the set of codeforces problems I have done
 
 
