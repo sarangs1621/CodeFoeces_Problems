@@ -778,8 +778,12 @@ Prints
 *two strings: * "Hello, World!" on one line and the input string on the next line.
 
 **Input**
+
 Welcome to C programming.
 
 **Output**
+
 Hello, World!
 Welcome to C programming.
+
+
