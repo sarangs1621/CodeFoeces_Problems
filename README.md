@@ -968,6 +968,7 @@ Sample Output
 
 # [**Say "Hello, World!" With C++**](https://www.hackerrank.com/challenges/cpp-hello-world/problem?isFullScreen=true)
 **Objective**
+
 This is a simple challenge to help you practice printing to stdout. You may also want to complete Solve Me First in C++ before attempting this challenge.
 
 We're starting out by printing the most famous computing phrase of all time! In the editor below, use either printf or cout to print the string Hello, World! to stdout.
@@ -994,6 +995,7 @@ Hello, World!
 
 # [**Input and Output**](https://www.hackerrank.com/challenges/cpp-input-and-output/problem?isFullScreen=true)
 **Objective**
+
 In this challenge, we practice reading input from stdin and printing output to stdout.
 
 In C++, you can read a single whitespace-separated token of input using cin, and print output to stdout using cout. For example, let's say we declare the following variables:
@@ -1030,7 +1032,175 @@ Sample Output
 
 10
 
+# [**Basic Data Types**](https://www.hackerrank.com/challenges/c-tutorial-basic-data-types/problem?isFullScreen=true)
+**Objective**
 
+Some C++ data types, their format specifiers, and their most common bit widths are as follows:
 
+Int ("%d"): 32 Bit integer
+Long ("%ld"): 64 bit integer
+Char ("%c"): Character type
+Float ("%f"): 32 bit real value
+Double ("%lf"): 64 bit real value
+Reading
+To read a data type, use the following syntax:
 
+scanf("`format_specifier`", &val)
+For example, to read a character followed by a double:
 
+char ch;
+double d;
+scanf("%c %lf", &ch, &d);
+For the moment, we can ignore the spacing between format specifiers.
+
+Printing
+To print a data type, use the following syntax:
+
+printf("`format_specifier`", val)
+For example, to print a character followed by a double:
+
+char ch = 'd';
+double d = 234.432;
+printf("%c %lf", ch, d);
+Note: You can also use cin and cout instead of scanf and printf; however, if you are taking a million numbers as input and printing a million lines, it is faster to use scanf and printf.
+
+**Input **
+
+Input consists of the following space-separated values: int, long, char, float, and double, respectively.
+
+**Output **
+
+Print each element on a new line in the same order it was received as input. Note that the floating point value should be correct up to 3 decimal places and the double to 9 decimal places.
+
+Sample Input
+
+3 12345678912345 a 334.23 14049.30493
+Sample Output
+
+3
+12345678912345
+a
+334.230
+14049.304930000
+
+# [**Conditional Statements**](https://www.hackerrank.com/challenges/c-tutorial-conditional-if-else/problem?isFullScreen=true)
+if and else are two of the most frequently used conditionals in C/C++, and they enable you to execute zero or one conditional statement among many such dependent conditional statements. We use them in the following ways:
+
+if: This executes the body of bracketed code starting with statement1 if condition evaluates to true.
+
+if (condition) {
+    statement1;
+    ...
+}
+if - else: This executes the body of bracketed code starting with statement1 if condition evaluates to true, or it executes the body of code starting with statement2 if condition evaluates to false. Note that only one of the bracketed code sections will ever be executed.
+
+if (condition) {
+    statement1;
+    ...
+}
+else {
+    statement2;
+    ...
+}
+if - else if - else: In this structure, dependent statements are chained together and the condition for each statement is only checked if all prior conditions in the chain evaluated to false. Once a condition evaluates to true, the bracketed code associated with that statement is executed and the program then skips to the end of the chain of statements and continues executing. If each condition in the chain evaluates to false, then the body of bracketed code in the else block at the end is executed.
+
+if(first condition) {
+    ...
+}
+else if(second condition) {
+    ...
+}
+.
+.
+.
+else if((n-1)'th condition) {
+    ....
+}
+else {
+    ...
+}
+Given a positive integer n, do the following:
+
+If 1 ≤ n ≤ 9, print the lowercase English word corresponding to the number (e.g., one for , two for , etc.).
+If n > 9 , print Greater than 9.
+Input Formatn ≤ 9
+
+A single integer,n .
+
+**Constraints**
+
+1 ≤ n ≤ 10⁹
+
+**Output **
+
+If 1 ≤ n ≤ 9, then print the lowercase English word corresponding to the number (e.g., one for 1, two for 2, etc.); otherwise, print Greater than 9.
+
+Sample Input 0
+
+5
+Sample Output 0
+
+five
+
+Explanation 0
+
+five is the English word for the number 5.
+
+Sample Input 1
+
+8
+Sample Output 1
+
+eight
+
+Explanation 1
+
+eight is the English word for the number 8.
+
+Sample Input 2
+
+44
+Sample Output 2
+
+Greater than 9
+
+# [**For Loop**](https://www.hackerrank.com/challenges/c-tutorial-for-loop/problem?isFullScreen=true)
+A for loop is a programming language statement which allows code to be repeatedly executed.
+
+The syntax is
+
+for ( <expression_1> ; <expression_2> ; <expression_3> )
+    <statement>
+expression_1 is used for intializing variables which are generally used for controlling the terminating flag for the loop.
+expression_2 is used to check for the terminating condition. If this evaluates to false, then the loop is terminated.
+expression_3 is generally used to update the flags/variables.
+A sample loop is
+
+for(int i = 0; i < 10; i++) {
+    ...
+}
+In this challenge, you will use a for loop to increment a variable through a range.
+
+**Input **
+
+You will be given two positive integers,  and  (), separated by a newline.
+
+**Output **
+
+For each integer  in the inclusive interval [ a, b]:
+
+If 1 ≤ n ≤ 9, then print the English representation of it in lowercase. That is "one" for 1, "two" for 2, and so on.
+Else if n > 9 and it is an even number, then print "even".
+Else if n > 9 and it is an odd number, then print "odd".
+Note: [a,b] = {x ∈ ![image](https://user-images.githubusercontent.com/92372142/192580542-bbdc0a94-b133-4f1e-b521-9f91d31205ba.png) | a ≤ x ≤ b } = { a + a + 1 ..., b}
+
+Sample Input
+
+8
+11
+Sample Output
+
+eight
+nine
+even
+odd
