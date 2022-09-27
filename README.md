@@ -814,7 +814,7 @@ First, take a character,ch as input.
 Then take the string,s as input.
 Lastly, take the sentence sen as input.
 
-Constraints
+**Constraints**
 
 Strings for s and sen will have fewer than 100 characters, including the newline.
 
@@ -831,17 +831,17 @@ The fundamental data types in c are int, float and char. Today, we're discussing
 
 The printf() function prints the given statement to the console. The syntax is printf("format string",argument_list);. In the function, if we are using an integer, character, string or float as argument, then in the format string we have to write %d (integer), %c (character), %s (string), %f (float) respectively.
 
-The scanf() function reads the input data from the console. The syntax is scanf("format string",argument_list);. For ex: The scanf("%d",&number) statement reads integer number from the console and stores the given value in variable .
+The scanf() function reads the input data from the console. The syntax is scanf("format string",argument_list);. For ex: The scanf("%d",&number) statement reads integer number from the console and stores the given value in variable number.
 
-To input two integers separated by a space on a single line, the command is scanf("%d %d", &n, &m), where  and  are the two integers.
+To input two integers separated by a space on a single line, the command is scanf("%d %d", &n, &m), where n and m are the two integers.
 
 Task
 
 Your task is to take two numbers of int data type, two numbers of float data type as input and output their sum:
 
-Declare  variables: two of type int and two of type float.
-Read  lines of input from stdin (according to the sequence given in the 'Input Format' section below) and initialize your  variables.
-Use the  and  operator to perform the following operations:
+Declare 4 variables: two of type int and two of type float.
+Read 2 lines of input from stdin (according to the sequence given in the 'Input Format' section below) and initialize your 4 variables.
+Use the + and - operator to perform the following operations:
 Print the sum and difference of two int variable on a new line.
 Print the sum and difference of two float variable rounded to one decimal place on a new line.
 **Input**
@@ -849,11 +849,79 @@ Print the sum and difference of two float variable rounded to one decimal place 
 The first line contains two integers.
 The second line contains two floating point numbers.
 
-Constraints
+**Constraints**
 
- integer variables 
- float variables 
+1 ≤ integer variables ≤ 10⁴
+1 ≤ float variables ≤ 10⁴
  
 **Output**
 
-Print the sum and difference of both integers separated by a space on the first line, and the sum and difference of both float (scaled to  decimal place) separated by a space on the second line.
+Print the sum and difference of both integers separated by a space on the first line, and the sum and difference of both float (scaled to 1 decimal place) separated by a space on the second line.
+
+Sample Input
+
+10 4
+4.0 2.0
+Sample Output
+
+14 6
+6.0 2.0
+
+# [**Functions in C**](https://www.hackerrank.com/challenges/functions-in-c/problem?isFullScreen=true)
+**Objective**
+
+In this challenge, you will learn simple usage of functions in C. Functions are a bunch of statements grouped together. A function is provided with zero or more arguments, and it executes the statements on it. Based on the return type, it either returns nothing (void) or something.
+
+A sample syntax for a function is
+
+	return_type function_name(arg_type_1 arg_1, arg_type_2 arg_2, ...) {
+    	...
+        ...
+        ...
+        [if return_type is non void]
+        	return something of type `return_type`;
+    }
+For example, a function to read four variables and return the sum of them can be written as
+
+	int sum_of_four(int a, int b, int c, int d) {
+    	int sum = 0;
+        sum += a;
+        sum += b;
+        sum += c;
+        sum += d;
+        return sum;
+    }
++= : Add and assignment operator. It adds the right operand to the left operand and assigns the result to the left operand.
+
+a += b is equivalent to a = a + b;
+Task
+
+Write a function int max_of_four(int a, int b, int c, int d) which reads four arguments and returns the greatest of them.
+
+Note
+
+There is not built in max function in C. Code that will be reused is often put in a separate function, e.g. int max(x, y) that returns the greater of the two values.
+
+**Input **
+
+Input will contain four integers - a,b,c,d, one on each line.
+
+**Output **
+
+Print the greatest of the four integers.
+Note: I/O will be automatically handled.
+
+Sample Input
+
+3
+4
+6
+5
+
+Sample Output
+
+6
+
+
+
+
