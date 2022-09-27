@@ -966,3 +966,71 @@ Sample Output
 9
 1
 
+# [**Say "Hello, World!" With C++**](https://www.hackerrank.com/challenges/cpp-hello-world/problem?isFullScreen=true)
+**Objective**
+This is a simple challenge to help you practice printing to stdout. You may also want to complete Solve Me First in C++ before attempting this challenge.
+
+We're starting out by printing the most famous computing phrase of all time! In the editor below, use either printf or cout to print the string Hello, World! to stdout.
+
+The more popular command form is cout. It has the following basic form:
+
+cout<<value_to_print<<value_to_print;
+
+Any number of values can be printed using one command as shown.
+
+The printf command comes from C language. It accepts an optional format specification and a list of variables. Two examples for printing a string are:
+
+printf("%s", string); printf(string);
+
+Note that neither method adds a newline. It only prints what you tell it to.
+
+**Output**
+
+Print Hello, World! to stdout.
+
+Sample Output
+
+Hello, World!
+
+# [**Input and Output**](https://www.hackerrank.com/challenges/cpp-input-and-output/problem?isFullScreen=true)
+**Objective**
+In this challenge, we practice reading input from stdin and printing output to stdout.
+
+In C++, you can read a single whitespace-separated token of input using cin, and print output to stdout using cout. For example, let's say we declare the following variables:
+
+string s;
+int n;
+and we want to use cin to read the input "High 5" from stdin. We can do this with the following code:
+
+cin >> s >> n;
+This reads the first word ("High") from stdin and saves it as string s, then reads the second word ("5") from stdin and saves it as integer n. If we want to print these values to stdout, separated by a space, we write the following code:
+
+cout << s << " " << n << endl;
+This code prints the contents of string s, a single space (" "), then the integer n. We end our line of output with a newline using endl. This results in the following output:
+
+High 5
+Task
+Read 3 numbers from stdin and print their sum to stdout.
+
+**Input **
+
+One line that contains 3 space-separated integers: a, b, and c.
+
+**Constraints**
+1 ≤  a,b,c ≤ 1000
+
+**Output**
+
+Print the sum of the three numbers on a single line.
+
+Sample Input
+
+1 2 7
+Sample Output
+
+10
+
+
+
+
+
